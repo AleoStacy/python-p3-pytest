@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
+# lib/testing/test_not_none.py
 
-from not_none_functions import return_not_none
+from not_none_functions import some_function
 
-# def test_return_not_none():
-#     '''in not_none_functions, function "return_not_none" returns a value that is not None.'''
-#     assert False
+def test_some_function():
+    assert some_function() is not None  # Test that the function does not return None
